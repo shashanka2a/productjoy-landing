@@ -3,6 +3,7 @@ import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { ExternalLink, ArrowRight } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { AnimatedSection } from "./AnimatedSection";
 
 export function CaseStudies() {
   const cases = [
@@ -46,7 +47,8 @@ export function CaseStudies() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {cases.map((caseStudy, index) => (
-            <Card key={index} className="bg-gray-900/50 border-gray-800 hover:border-purple-500/50 transition-all duration-300 group overflow-hidden">
+            <AnimatedSection key={index} delay={index * 200} direction="up">
+              <Card className="bg-gray-900/50 border-gray-800 hover:border-purple-500/50 transition-all duration-300 ease-out group overflow-hidden">
               <div className="relative overflow-hidden">
                 <ImageWithFallback
                   src={caseStudy.image}
@@ -90,7 +92,8 @@ export function CaseStudies() {
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </CardContent>
-            </Card>
+              </Card>
+            </AnimatedSection>
           ))}
         </div>
       </div>

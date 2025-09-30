@@ -1,10 +1,12 @@
 import { Button } from "./ui/button";
 import { ArrowRight, Mail, MessageCircle } from "lucide-react";
+import { AnimatedSection } from "./AnimatedSection";
 
 export function FinalCTA() {
   return (
     <section className="py-20 px-6 bg-gradient-to-br from-purple-900/20 to-pink-900/20">
-      <div className="max-w-4xl mx-auto text-center">
+      <AnimatedSection direction="fade" delay={100}>
+        <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
           Ready to ship your 
           <br />
@@ -21,7 +23,7 @@ export function FinalCTA() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
           <Button 
             size="lg"
-            className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 text-lg group"
+            className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 text-lg group transition-all duration-300 ease-out"
           >
             Start Your Project Today
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -29,7 +31,7 @@ export function FinalCTA() {
           <Button 
             size="lg"
             variant="outline"
-            className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white px-8 py-4 text-lg"
+            className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white px-8 py-4 text-lg transition-all duration-300 ease-out"
           >
             Book Discovery Call
           </Button>
@@ -45,7 +47,8 @@ export function FinalCTA() {
             <span>15-min discovery calls available</span>
           </div>
         </div>
-      </div>
+        </div>
+      </AnimatedSection>
     </section>
   );
 }

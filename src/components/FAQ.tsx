@@ -1,4 +1,5 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion";
+import { AnimatedSection } from "./AnimatedSection";
 
 export function FAQ() {
   const faqs = [
@@ -48,12 +49,13 @@ export function FAQ() {
           </p>
         </div>
 
-        <Accordion type="single" collapsible className="space-y-4">
-          {faqs.map((faq, index) => (
+        <AnimatedSection direction="fade" delay={200}>
+          <Accordion type="single" collapsible className="space-y-4">
+            {faqs.map((faq, index) => (
             <AccordionItem 
               key={index} 
               value={`item-${index}`}
-              className="bg-gray-900/50 border border-gray-800 rounded-lg px-6 hover:bg-gray-800/50 transition-colors"
+              className="bg-gray-900/50 border border-gray-800 rounded-lg px-6 hover:bg-gray-800/50 transition-all duration-300 ease-out"
             >
               <AccordionTrigger className="text-left text-white hover:text-purple-400 py-6">
                 {faq.question}
@@ -62,9 +64,10 @@ export function FAQ() {
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
-          ))}
-        </Accordion>
-      </div>
+            ))}
+          </Accordion>
+        </AnimatedSection>
+        </div>
     </section>
   );
 }

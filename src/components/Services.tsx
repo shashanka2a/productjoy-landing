@@ -1,5 +1,6 @@
 import { Card, CardContent } from "./ui/card";
 import { Palette, Layout, Code, Database, CheckCircle, Rocket } from "lucide-react";
+import { AnimatedSection } from "./AnimatedSection";
 
 export function Services() {
   const services = [
@@ -49,19 +50,21 @@ export function Services() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="bg-gray-900/50 border-gray-800 hover:bg-gray-800/50 transition-colors group">
-              <CardContent className="p-8">
-                <div className="text-purple-400 mb-4 group-hover:scale-110 transition-transform">
-                  {service.icon}
-                </div>
-                <h3 className="text-xl font-semibold text-white mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-gray-300 leading-relaxed">
-                  {service.description}
-                </p>
-              </CardContent>
-            </Card>
+            <AnimatedSection key={index} delay={index * 100} direction="up">
+              <Card className="bg-gray-900/50 border-gray-800 hover:bg-gray-800/50 transition-all duration-300 ease-out group">
+                <CardContent className="p-8">
+                  <div className="text-purple-400 mb-4 group-hover:scale-110 transition-transform">
+                    {service.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold text-white mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-300 leading-relaxed">
+                    {service.description}
+                  </p>
+                </CardContent>
+              </Card>
+            </AnimatedSection>
           ))}
         </div>
       </div>

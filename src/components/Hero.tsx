@@ -1,11 +1,34 @@
+"use client";
+
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
+import { useEffect, useState } from "react";
 
 export function Hero() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 py-20">
-      <div className="max-w-4xl mx-auto text-center">
-        <h1 className="text-6xl md:text-8xl font-bold text-white mb-8 leading-tight">
+    <section className="min-h-screen flex items-center justify-center px-6 py-20 relative overflow-hidden">
+      {/* Subtle background elements with parallax */}
+      <div 
+        className="absolute inset-0 opacity-10"
+        style={{
+          transform: `translateY(${scrollY * 0.5}px)`,
+        }}
+      >
+        <div className="absolute top-20 left-10 w-32 h-32 bg-purple-500 rounded-full blur-3xl"></div>
+        <div className="absolute top-40 right-20 w-24 h-24 bg-pink-500 rounded-full blur-2xl"></div>
+        <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-blue-500 rounded-full blur-3xl"></div>
+      </div>
+      
+      <div className="max-w-4xl mx-auto text-center relative z-10">
+        <h1 className="text-3xl md:text-5xl font-bold text-white mb-8 leading-tight">
           Ship real products,
           <br />
           <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
@@ -19,7 +42,7 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button 
             size="lg"
-            className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 text-lg group"
+            className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 text-lg group transition-all duration-300 ease-out"
           >
             Start Your Project
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -27,7 +50,7 @@ export function Hero() {
           <Button 
             size="lg"
             variant="outline"
-            className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white px-8 py-4 text-lg"
+            className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white px-8 py-4 text-lg transition-all duration-300 ease-out"
           >
             View Our Work
           </Button>

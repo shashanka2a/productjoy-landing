@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { Check, Zap, Clock, Calendar } from "lucide-react";
+import { AnimatedSection } from "./AnimatedSection";
 
 export function DeliveryPlans() {
   const plans = [
@@ -69,12 +70,12 @@ export function DeliveryPlans() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {plans.map((plan, index) => (
-            <Card 
-              key={index} 
-              className={`relative bg-gray-900/50 border-gray-800 hover:border-purple-500/50 transition-all duration-300 ${
-                plan.popular ? 'ring-2 ring-purple-500/20 scale-105' : ''
-              }`}
-            >
+            <AnimatedSection key={index} delay={index * 150} direction="up">
+              <Card 
+                className={`relative bg-gray-900/50 border-gray-800 hover:border-purple-500/50 transition-all duration-300 ease-out ${
+                  plan.popular ? 'ring-2 ring-purple-500/20 scale-105' : ''
+                }`}
+              >
               {plan.popular && (
                 <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-purple-500 to-pink-500 text-white">
                   Most Popular
@@ -104,7 +105,7 @@ export function DeliveryPlans() {
                 </ul>
                 
                 <Button 
-                  className={`w-full ${
+                  className={`w-full transition-all duration-300 ease-out ${
                     plan.popular 
                       ? 'bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600' 
                       : 'bg-gray-800 hover:bg-gray-700'
@@ -114,7 +115,8 @@ export function DeliveryPlans() {
                   Get Started
                 </Button>
               </CardContent>
-            </Card>
+              </Card>
+            </AnimatedSection>
           ))}
         </div>
       </div>

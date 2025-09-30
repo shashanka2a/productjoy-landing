@@ -10,25 +10,25 @@ export function Navigation() {
               ProductJoy
             </div>
             <div className="hidden md:flex items-center space-x-6">
-              <a href="#services" className="text-gray-300 hover:text-white transition-colors">
+              <a href="#services" className="text-gray-300 hover:text-white transition-all duration-300 ease-out">
                 Services
               </a>
-              <a href="#plans" className="text-gray-300 hover:text-white transition-colors">
+              <a href="#plans" className="text-gray-300 hover:text-white transition-all duration-300 ease-out">
                 Plans
               </a>
-              <a href="#process" className="text-gray-300 hover:text-white transition-colors">
+              <a href="#process" className="text-gray-300 hover:text-white transition-all duration-300 ease-out">
                 Process
               </a>
-              <a href="#work" className="text-gray-300 hover:text-white transition-colors">
+              <a href="#work" className="text-gray-300 hover:text-white transition-all duration-300 ease-out">
                 Work
               </a>
-              <a href="#faq" className="text-gray-300 hover:text-white transition-colors">
+              <a href="#faq" className="text-gray-300 hover:text-white transition-all duration-300 ease-out">
                 FAQ
               </a>
             </div>
           </div>
           <Button 
-            className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white"
+            className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white transition-all duration-300 ease-out"
           >
             Get Started
           </Button>
