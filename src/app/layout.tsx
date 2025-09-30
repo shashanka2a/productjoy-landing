@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   description: "Transform your ideas into exceptional products with our expert development services. From concept to launch, we deliver innovative solutions that drive business growth.",
   keywords: ["product development", "software development", "web development", "mobile apps", "UI/UX design"],
   authors: [{ name: "ProductJoy Team" }],
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   openGraph: {
     title: "ProductJoy - Modern Product Development Services",
     description: "Transform your ideas into exceptional products with our expert development services.",

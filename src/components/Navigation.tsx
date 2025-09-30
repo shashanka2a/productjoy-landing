@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import { Logo } from "./Logo";
 
 export function Navigation() {
   return (
@@ -6,9 +7,7 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-8">
-            <div className="text-xl font-semibold text-white">
-              ProductJoy
-            </div>
+            <Logo size={32} />
             <div className="hidden md:flex items-center space-x-6">
               <a href="#services" className="text-gray-300 hover:text-white transition-all duration-300 ease-out">
                 Services
