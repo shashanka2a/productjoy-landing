@@ -4,6 +4,25 @@ import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
+// Typing effect component
+function TypingText({ text, speed = 100 }: { text: string; speed?: number }) {
+  const [displayText, setDisplayText] = useState("");
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    if (currentIndex < text.length) {
+      const timeout = setTimeout(() => {
+        setDisplayText(prev => prev + text[currentIndex]);
+        setCurrentIndex(prev => prev + 1);
+      }, speed);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [currentIndex, text, speed]);
+
+  return <span>{displayText}</span>;
+}
+
 export function Hero() {
   const [scrollY, setScrollY] = useState(0);
 
@@ -28,11 +47,11 @@ export function Hero() {
       </div>
       
       <div className="max-w-4xl mx-auto text-center relative z-10">
-        <h1 className="text-3xl md:text-5xl font-bold text-white mb-8 leading-tight">
-          Ship real products,
+            <h1 className="text-6xl md:text-8xl font-bold text-white mb-8 leading-tight">
+          <TypingText text="Ship real products," speed={80} />
           <br />
           <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-            insanely fast
+            <TypingText text="insanely fast" speed={80} />
           </span>
         </h1>
         <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed">
