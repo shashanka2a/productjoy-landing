@@ -51,6 +51,8 @@ export function CaseStudies() {
                 <ImageWithFallback
                   src={caseStudy.image}
                   alt={caseStudy.title}
+                  width={400}
+                  height={192}
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
