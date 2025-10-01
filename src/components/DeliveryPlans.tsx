@@ -46,10 +46,8 @@ export function DeliveryPlans() {
         "Complete product development",
         "Advanced integrations",
         "Custom design system",
-        "Performance optimization",
         "DevOps and deployment",
         "Unlimited revisions",
-        "Ongoing support"
       ],
       popular: false
     }
