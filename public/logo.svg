@@ -5,13 +5,16 @@
       <stop offset="100%" stop-color="#EC4899"/> <!-- Pink -->
     </linearGradient>
   </defs>
-  
-  <!-- Cube/Box outline -->
-  <rect x="20" y="20" width="80" height="80" rx="12" stroke="url(#grad)" stroke-width="8" fill="none"/>
-  
-  <!-- Arrow inside box -->
-  <path d="M40 60h40l-12-12m12 12l-12 12" stroke="url(#grad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-  
-  <!-- Smile inside box -->
-  <text x="90" y="75" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="url(#grad)">)</text>
+
+  <!-- Rounded box -->
+  <rect x="20" y="20" width="80" height="80" rx="12" 
+        stroke="url(#grad)" stroke-width="8" fill="none"/>
+
+  <!-- Arrow (→) slightly higher -->
+  <path d="M40 52h40M80 52l-12-12M80 52l-12 12" 
+        stroke="url(#grad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Smile curve moved up to fit neatly -->
+  <path d="M48 80 Q60 92 72 80" 
+        stroke="url(#grad)" stroke-width="6" stroke-linecap="round" fill="none"/>
 </svg>
