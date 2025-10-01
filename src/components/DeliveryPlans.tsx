@@ -31,7 +31,6 @@ export function DeliveryPlans() {
         "Full feature development",
         "UI/UX design included",
         "API integration",
-        "Testing and optimization",
         "7-day delivery guarantee",
         "2 rounds of revisions"
       ],
@@ -41,7 +40,7 @@ export function DeliveryPlans() {
       name: "Scale",
       duration: "1 Month",
       icon: <Calendar className="h-6 w-6" />,
-      description: "For comprehensive products and complex solutions", 
+      description: "For comprehensive products and solutions", 
       price: "$35,000",
       features: [
         "Complete product development",

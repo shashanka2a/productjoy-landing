@@ -11,4 +11,7 @@
   
   <!-- Arrow inside box -->
   <path d="M40 60h40l-12-12m12 12l-12 12" stroke="url(#grad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Smile inside box -->
+  <text x="90" y="75" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="url(#grad)">)</text>
 </svg>
