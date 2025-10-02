@@ -11,7 +11,7 @@ export function CaseStudies() {
   const cases = [
     {
       title: "MenuPRO",
-      description: "Digital Menu Platform for Restaurants. Scan, Order, and Serve — no tablets, no delays. Customers order directly from their table. No waiters needed. Add allergies, special instructions, and customize orders exactly how they want them.",
+      description: "Digital Menu Platform for Restaurants. Scan, Order, and Serve — no tablets, no delays. Customers order directly from their table. No waiters needed.",
       image: "/m.png",
       tags: ["Restaurant Tech", "QR Code", "Mobile"],
       timeline: "2 Weeks",
@@ -20,7 +20,7 @@ export function CaseStudies() {
     },
     {
       title: "Aura Art",
-      description: "AI meets creativity. The ultimate creative platform combining stunning templates, powerful editing tools, and intelligent AI assistance. Create professional content in seconds, not hours.",
+      description: "AI meets creativity. The ultimate creative platform combining stunning templates, powerful editing tools, and intelligent AI assistance.",
       image: "/p.png",
       tags: ["AI", "Design", "Templates"],
       timeline: "3 Weeks",
