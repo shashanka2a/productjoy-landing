@@ -8,28 +8,31 @@ import { AnimatedSection } from "./AnimatedSection";
 export function CaseStudies() {
   const cases = [
     {
-      title: "FinTech Dashboard",
-      description: "A comprehensive financial management platform with real-time analytics and automated reporting features.",
-      image: "https://images.unsplash.com/photo-1665470909939-959569b20021?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBhcHBsaWNhdGlvbiUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NTkyNDc5NzV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Web App", "React", "TypeScript"],
-      timeline: "1 Week",
-      results: "+150% user engagement"
+      title: "MenuPRO",
+      description: "Digital Menu Platform for Restaurants. Scan, Order, and Serve — no tablets, no delays. Customers order directly from their table. No waiters needed. Add allergies, special instructions, and customize orders exactly how they want them.",
+      image: "/m.png",
+      tags: ["Restaurant Tech", "QR Code", "Mobile"],
+      timeline: "2 Weeks",
+      results: "+300% order efficiency",
+      link: "https://www.menupro.biz/"
     },
     {
-      title: "E-commerce Mobile App",
-      description: "Native mobile shopping experience with seamless checkout, push notifications, and personalized recommendations.",
-      image: "https://images.unsplash.com/photo-1658953229625-aad99d7603b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzU5MTkyODYyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Mobile", "React Native", "iOS"],
+      title: "Aura Art",
+      description: "AI meets creativity. The ultimate creative platform combining stunning templates, powerful editing tools, and intelligent AI assistance. Create professional content in seconds, not hours.",
+      image: "/p.png",
+      tags: ["AI", "Design", "Templates"],
       timeline: "3 Weeks",
-      results: "+200% conversion rate"
+      results: "+250% creation speed",
+      link: "https://www.tryaura.art/"
     },
     {
-      title: "SaaS Platform",
-      description: "Modern workspace collaboration tool with team management, project tracking, and integrated communication features.",
-      image: "https://images.unsplash.com/photo-1705909773420-8d7af2a343f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3b3Jrc3BhY2UlMjBkZXNpZ258ZW58MXx8fHwxNzU5MjIwMTE1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["SaaS", "Next.js", "PostgreSQL"],
+      title: "InOrbyt",
+      description: "Launch your own creator token and grow with your community. Every creator and fan gets a built-in wallet — no crypto setup needed.",
+      image: "/p2.png",
+      tags: ["Web3", "Creator Economy", "Tokens"],
       timeline: "1 Month",
-      results: "10K+ active users"
+      results: "$50M+ volume traded",
+      link: "https://inorbyt-landing.vercel.app/"
     }
   ];
 
@@ -59,7 +62,12 @@ export function CaseStudies() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
                 <div className="absolute top-4 right-4">
-                  <Button size="sm" variant="secondary" className="bg-white/10 backdrop-blur-sm hover:bg-white/20">
+                  <Button 
+                    size="sm" 
+                    variant="secondary" 
+                    className="bg-white/10 backdrop-blur-sm hover:bg-white/20"
+                    onClick={() => window.open(caseStudy.link, '_blank')}
+                  >
                     <ExternalLink className="h-4 w-4" />
                   </Button>
                 </div>
@@ -87,8 +95,12 @@ export function CaseStudies() {
                   <span className="text-green-400 font-medium">{caseStudy.results}</span>
                 </div>
                 
-                <Button variant="ghost" className="w-full mt-4 text-purple-400 hover:text-white hover:bg-purple-500/20 group">
-                  View Case Study
+                <Button 
+                  variant="ghost" 
+                  className="w-full mt-4 text-purple-400 hover:text-white hover:bg-purple-500/20 group"
+                  onClick={() => window.open(caseStudy.link, '_blank')}
+                >
+                  View Live Project
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </CardContent>
