@@ -10,13 +10,13 @@ import { AnimatedSection } from "./AnimatedSection";
 export function CaseStudies() {
   const cases = [
     {
-      title: "MenuPRO",
-      description: "Digital Menu Platform for Restaurants. Scan, Order, and Serve — no tablets, no delays. Customers order directly from their table.",
-      image: "/m.png",
-      tags: ["Restaurant Tech", "QR Code", "Mobile"],
+      title: "evolvii",
+      description: "Turn climate anxiety into unstoppable action. Connect. Create. Evolve. A new funnel: doom → action → change.",
+      image: "/e.png",
+      tags: ["Climate Action", "Community", "Activism"],
       timeline: "2 Weeks",
-      results: "+300% order efficiency",
-      link: "https://www.menupro.biz/"
+      results: "100% action, 100% style",
+      link: "https://www.evolvii.world/"
     },
     {
       title: "Aura Art",
