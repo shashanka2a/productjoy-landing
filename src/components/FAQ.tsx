@@ -38,29 +38,29 @@ export function FAQ() {
   ];
 
   return (
-    <section id="faq" className="py-20 px-6">
+    <section id="faq" className="py-16 sm:py-20 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
             Frequently asked questions
           </h2>
-          <p className="text-lg text-gray-300">
+          <p className="text-base sm:text-lg text-gray-300 px-4">
             Everything you need to know about working with us
           </p>
         </div>
 
         <AnimatedSection direction="fade" delay={200}>
-          <Accordion type="single" collapsible className="space-y-4">
+          <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
             {faqs.map((faq, index) => (
             <AccordionItem 
               key={index} 
               value={`item-${index}`}
-              className="bg-gray-900/50 border border-gray-800 rounded-lg px-6 hover:bg-gray-800/50 transition-all duration-300 ease-out"
+              className="bg-gray-900/50 border border-gray-800 rounded-lg px-4 sm:px-6 hover:bg-gray-800/50 transition-all duration-300 ease-out"
             >
-              <AccordionTrigger className="text-left text-white hover:text-purple-400 py-6">
+              <AccordionTrigger className="text-left text-white hover:text-purple-400 py-4 sm:py-6 text-sm sm:text-base">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-gray-300 pb-6 leading-relaxed">
+              <AccordionContent className="text-gray-300 pb-4 sm:pb-6 leading-relaxed text-sm sm:text-base">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

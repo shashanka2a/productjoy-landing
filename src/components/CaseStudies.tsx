@@ -39,18 +39,18 @@ export function CaseStudies() {
   ];
 
   return (
-    <section id="work" className="py-20 px-6 bg-gray-950/50">
+    <section id="work" className="py-16 sm:py-20 px-4 sm:px-6 bg-gray-950/50">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
             Recent work
           </h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto px-4">
             Real projects, real results. See how we&apos;ve helped businesses transform their ideas into successful products.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
           {cases.map((caseStudy, index) => (
             <AnimatedSection key={index} delay={index * 200} direction="up">
               <Card className="bg-gray-900/50 border-gray-800 hover:border-purple-500/50 transition-all duration-300 ease-out group overflow-hidden">
@@ -60,50 +60,50 @@ export function CaseStudies() {
                   alt={caseStudy.title}
                   width={400}
                   height={192}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-40 sm:h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
-                <div className="absolute top-4 right-4">
+                <div className="absolute top-3 sm:top-4 right-3 sm:right-4">
                   <Button 
                     size="sm" 
                     variant="secondary" 
-                    className="bg-white/10 backdrop-blur-sm hover:bg-white/20"
+                    className="bg-white/10 backdrop-blur-sm hover:bg-white/20 h-8 w-8 p-0"
                     onClick={() => window.open(caseStudy.link, '_blank')}
                   >
-                    <ExternalLink className="h-4 w-4" />
+                    <ExternalLink className="h-3 w-3 sm:h-4 sm:w-4" />
                   </Button>
                 </div>
               </div>
               
-              <CardContent className="p-6">
-                <div className="flex flex-wrap gap-2 mb-3">
+              <CardContent className="p-4 sm:p-6">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3">
                   {caseStudy.tags.map((tag, tagIndex) => (
-                    <Badge key={tagIndex} variant="secondary" className="bg-purple-500/20 text-purple-300 border-purple-500/30">
+                    <Badge key={tagIndex} variant="secondary" className="bg-purple-500/20 text-purple-300 border-purple-500/30 text-xs">
                       {tag}
                     </Badge>
                   ))}
                 </div>
                 
-                <h3 className="text-xl font-semibold text-white mb-3">
+                <h3 className="text-lg sm:text-xl font-semibold text-white mb-3">
                   {caseStudy.title}
                 </h3>
                 
-                <p className="text-gray-300 mb-4 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-300 mb-4 leading-relaxed">
                   {caseStudy.description}
                 </p>
                 
-                <div className="flex justify-between items-center text-sm">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center text-xs sm:text-sm gap-2 sm:gap-0">
                   <span className="text-gray-400">Timeline: {caseStudy.timeline}</span>
                   <span className="text-green-400 font-medium">{caseStudy.results}</span>
                 </div>
                 
                 <Button 
                   variant="ghost" 
-                  className="w-full mt-4 text-purple-400 hover:text-white hover:bg-purple-500/20 group"
+                  className="w-full mt-4 text-purple-400 hover:text-white hover:bg-purple-500/20 group text-sm sm:text-base"
                   onClick={() => window.open(caseStudy.link, '_blank')}
                 >
                   View Live Project
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </CardContent>
               </Card>

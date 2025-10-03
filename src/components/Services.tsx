@@ -37,29 +37,29 @@ export function Services() {
   ];
 
   return (
-    <section id="services" className="py-20 px-6">
+    <section id="services" className="py-16 sm:py-20 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
             Everything you need to ship
           </h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto px-4">
             Premium product development from strategy to launch
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {services.map((service, index) => (
             <AnimatedSection key={index} delay={index * 100} direction="up">
               <Card className="bg-gray-900/50 border-gray-800 hover:bg-gray-800/50 transition-all duration-300 ease-out group">
-                <CardContent className="p-8">
+                <CardContent className="p-6 sm:p-8">
                   <div className="text-purple-400 mb-4 group-hover:scale-110 transition-transform">
                     {service.icon}
                   </div>
-                  <h3 className="text-xl font-semibold text-white mb-3">
+                  <h3 className="text-lg sm:text-xl font-semibold text-white mb-3">
                     {service.title}
                   </h3>
-                  <p className="text-gray-300 leading-relaxed">
+                  <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
                     {service.description}
                   </p>
                 </CardContent>
