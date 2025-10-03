@@ -62,6 +62,7 @@ export function Hero() {
           <Button 
             size="lg"
             className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 text-lg group transition-all duration-300 ease-out"
+            onClick={() => window.open('https://pay.productjoy.co', '_blank')}
           >
             Start Your Project
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -70,6 +71,7 @@ export function Hero() {
             size="lg"
             variant="outline"
             className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white px-8 py-4 text-lg transition-all duration-300 ease-out"
+            onClick={() => window.open('https://pay.productjoy.co', '_blank')}
           >
             View Our Work
           </Button>

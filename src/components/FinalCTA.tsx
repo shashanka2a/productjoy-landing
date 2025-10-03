@@ -21,20 +21,23 @@ export function FinalCTA() {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <Button 
-            size="lg"
-            className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 text-lg group transition-all duration-300 ease-out"
+          <a
+            href="https://pay.productjoy.co"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 text-lg group transition-all duration-300 ease-out rounded-md inline-flex items-center"
           >
             Start Your Project Today
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
-          <Button 
-            size="lg"
-            variant="outline"
-            className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white px-8 py-4 text-lg transition-all duration-300 ease-out"
+          </a>
+          <a
+            href="https://pay.productjoy.co"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white px-8 py-4 text-lg transition-all duration-300 ease-out rounded-md inline-flex items-center"
           >
             Book Discovery Call
-          </Button>
+          </a>
         </div>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center text-gray-400">

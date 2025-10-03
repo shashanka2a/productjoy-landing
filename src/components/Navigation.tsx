@@ -26,11 +26,14 @@ export function Navigation() {
               </a>
             </div>
           </div>
-          <Button 
-            className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white transition-all duration-300 ease-out"
+          <a 
+            href="https://pay.productjoy.co" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white transition-all duration-300 ease-out inline-flex items-center justify-center h-10 px-4 rounded-md"
           >
             Get Started
-          </Button>
+          </a>
         </div>
       </div>
     </nav>

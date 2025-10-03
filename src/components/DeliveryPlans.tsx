@@ -101,16 +101,18 @@ export function DeliveryPlans() {
                   ))}
                 </ul>
                 
-                <Button 
+                <a 
+                  href="https://pay.productjoy.co" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
                   className={`w-full transition-all duration-300 ease-out ${
                     plan.popular 
                       ? 'bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600' 
                       : 'bg-gray-800 hover:bg-gray-700'
-                  } text-white`}
-                  size="lg"
+                  } text-white inline-flex items-center justify-center h-10 px-4 rounded-md`}
                 >
                   Get Started
-                </Button>
+                </a>
               </CardContent>
               </Card>
             </AnimatedSection>
