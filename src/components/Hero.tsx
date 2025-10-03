@@ -71,7 +71,11 @@ export function Hero() {
             size="lg"
             variant="outline"
             className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white px-8 py-4 text-lg transition-all duration-300 ease-out"
-            onClick={() => window.open('https://pay.productjoy.co', '_blank')}
+            onClick={() => {
+              const el = document.getElementById('work');
+              if (el) el.scrollIntoView({ behavior: 'smooth' });
+              else window.location.hash = 'work';
+            }}
           >
             View Our Work
           </Button>
