@@ -19,13 +19,13 @@ export function CaseStudies() {
       link: "https://www.evolvii.world/"
     },
     {
-      title: "Aura Art",
-      description: "AI meets creativity. The ultimate creative platform combining stunning templates, powerful editing tools, and AI.",
+      title: "PayStreet",
+      description: "Seamless global finance with zero hidden fees, instant settlements, and enterprise‑grade security.",
       image: "/p.png",
-      tags: ["AI", "Design", "Templates"],
+      tags: ["Fintech", "Payments", "Global"],
       timeline: "3 Weeks",
-      results: "+250% creation speed",
-      link: "https://www.tryaura.art/"
+      results: "190+ countries",
+      link: "https://pay-street-app.vercel.app/"
     },
     {
       title: "InOrbyt",

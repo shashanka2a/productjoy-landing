@@ -13,9 +13,9 @@ export default function App() {
       <Navigation />
       <Hero />
       <Services />
-      <DeliveryPlans />
       <ProcessTimeline />
       <CaseStudies />
+      <DeliveryPlans />
       <FAQ />
       <FinalCTA />
     </div>
