@@ -19,13 +19,13 @@ export function CaseStudies() {
       link: "https://www.evolvii.world/"
     },
     {
-      title: "PayStreet",
+      title: "PayFlow",
       description: "Seamless global finance with zero hidden fees, instant settlements, and enterprise‑grade security.",
       image: "/p.png",
       tags: ["Fintech", "Payments", "Global"],
       timeline: "3 Weeks",
       results: "190+ countries",
-      link: "https://pay-street-app.vercel.app/"
+      link: "https://www.payflow.cash/"
     },
     {
       title: "InOrbyt",
