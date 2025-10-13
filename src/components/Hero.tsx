@@ -86,7 +86,7 @@ export function Hero() {
             <div className="text-sm sm:text-base text-gray-400">Delivery time</div>
           </div>
           <div>
-            <div className="text-2xl sm:text-3xl font-bold text-white mb-2">100+</div>
+            <div className="text-2xl sm:text-3xl font-bold text-white mb-2">10+</div>
             <div className="text-sm sm:text-base text-gray-400">Projects shipped</div>
           </div>
           <div>
