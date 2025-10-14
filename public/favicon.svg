@@ -6,25 +6,25 @@
     </linearGradient>
   </defs>
 
-  <!-- Black background -->
-  <rect x="0" y="0" width="160" height="160" fill="#000000"/>
+  <!-- Black background with rounded corners -->
+  <rect x="0" y="0" width="160" height="160" rx="24" fill="#000000"/>
 
-  <!-- Bag outline - thicker stroke -->
-  <rect x="30" y="40" width="100" height="100" rx="12" 
-        stroke="url(#grad)" stroke-width="10" fill="none"/>
+  <!-- Bag outline - smaller and centered -->
+  <rect x="50" y="60" width="60" height="60" rx="8" 
+        stroke="url(#grad)" stroke-width="6" fill="none"/>
 
-  <!-- Handle - thicker stroke -->
-  <path d="M50 40 Q80 0 110 40" 
-        stroke="url(#grad)" stroke-width="10" fill="none"/>
+  <!-- Handle - smaller and adjusted -->
+  <path d="M60 60 Q80 30 100 60" 
+        stroke="url(#grad)" stroke-width="6" fill="none"/>
 
-  <!-- Left eye (dot) - larger and more visible -->
-  <circle cx="65" cy="80" r="8" fill="url(#grad)"/>
+  <!-- Left eye (dot) - smaller -->
+  <circle cx="70" cy="85" r="4" fill="url(#grad)"/>
 
-  <!-- Right eye (slightly larger > with bigger spacing) - thicker stroke -->
-  <path d="M94 76 L108 80 L94 84" 
-        stroke="url(#grad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Right eye - smaller and adjusted -->
+  <path d="M90 82 L100 85 L90 88" 
+        stroke="url(#grad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- Smile - thicker stroke -->
-  <path d="M65 105 Q80 120 95 105" 
-        stroke="url(#grad)" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <!-- Smile - smaller and adjusted -->
+  <path d="M70 105 Q80 115 90 105" 
+        stroke="url(#grad)" stroke-width="6" stroke-linecap="round" fill="none"/>
 </svg>
