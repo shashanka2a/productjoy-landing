@@ -16,7 +16,7 @@ export function CaseStudies() {
       tags: ["Climate Action", "Community", "Activism"],
       timeline: "2 Weeks",
       results: "100% action, 100% style",
-      link: "https://www.evolvii.world/"
+      link: "https://evolvii-landing.vercel.app/"
     },
     {
       title: "PayFlow",
@@ -34,7 +34,7 @@ export function CaseStudies() {
       tags: ["Web3", "Creator Economy", "Tokens"],
       timeline: "1 Month",
       results: "$50M+ volume traded",
-      link: "https://inorbyt-landing.vercel.app/"
+      link: "https://www.inorbyt.club/"
     }
   ];
 
