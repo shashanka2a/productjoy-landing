@@ -10,13 +10,13 @@ import { AnimatedSection } from "./AnimatedSection";
 export function CaseStudies() {
   const cases = [
     {
-      title: "evolvii",
-      description: "Turn climate anxiety into unstoppable action. Connect. Create. Evolve. A new funnel: doom → action → change.",
-      image: "/e.png",
-      tags: ["Climate Action", "Community", "Activism"],
+      title: "Adverzeo",
+      description: "The agency behind millions of views. Our impeccable strategy helps brands go viral, achieving millions of views and global recognition.",
+      image: "/a.png",
+      tags: ["Marketing", "Viral Content", "Brand Growth"],
       timeline: "2 Weeks",
-      results: "100% action, 100% style",
-      link: "https://evolvii-landing.vercel.app/"
+      results: "500M+ views",
+      link: "https://www.adverzeo.online/"
     },
     {
       title: "PayFlow",
