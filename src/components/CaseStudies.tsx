@@ -11,7 +11,7 @@ export function CaseStudies() {
   const cases = [
     {
       title: "Adverzeo",
-      description: "The agency behind millions of views. Our impeccable strategy helps brands go viral, achieving millions of views and global recognition.",
+      description: "The agency behind millions of views. Our impeccable strategy helps brands go viral, achieving millions of views.",
       image: "/a.png",
       tags: ["Marketing", "Viral Content", "Brand Growth"],
       timeline: "2 Weeks",
