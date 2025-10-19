@@ -22,11 +22,22 @@ export const metadata: Metadata = {
     description: "Premium web & mobile app development agency with design and business consultation services. Custom software solutions for startups and enterprises.",
     type: "website",
     locale: "en_US",
+    url: "https://productjoy.co",
+    siteName: "ProductJoy",
+    images: [
+      {
+        url: "/image.png",
+        width: 1200,
+        height: 630,
+        alt: "ProductJoy - Premium Web & Mobile App Development Agency",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "ProductJoy - Premium Web & Mobile App Development Agency",
     description: "Premium web & mobile app development agency with design and business consultation services. Custom software solutions for startups and enterprises.",
+    images: ["/image.png"],
   },
 };
 
