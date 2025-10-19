@@ -8,9 +8,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ProductJoy - Modern Product Development Services",
-  description: "Transform your ideas into exceptional products with our expert development services. From concept to launch, we deliver innovative solutions that drive business growth.",
-  keywords: ["product development", "software development", "web development", "mobile apps", "UI/UX design"],
+  title: "ProductJoy - Premium Web & Mobile App Development Agency",
+  description: "Premium web & mobile app development agency specializing in custom software solutions, UI/UX design, and business consultation. From startup MVPs to enterprise applications, we deliver exceptional digital products that drive growth.",
+  keywords: ["premium web development", "mobile app development", "custom software development", "UI/UX design", "business consultation", "startup development", "enterprise applications", "digital product development", "software agency", "app development services"],
   authors: [{ name: "ProductJoy Team" }],
   icons: {
     icon: "/favicon.svg",
@@ -18,15 +18,15 @@ export const metadata: Metadata = {
     apple: "/favicon.svg",
   },
   openGraph: {
-    title: "ProductJoy - Modern Product Development Services",
-    description: "Transform your ideas into exceptional products with our expert development services.",
+    title: "ProductJoy - Premium Web & Mobile App Development Agency",
+    description: "Premium web & mobile app development agency with design and business consultation services. Custom software solutions for startups and enterprises.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ProductJoy - Modern Product Development Services",
-    description: "Transform your ideas into exceptional products with our expert development services.",
+    title: "ProductJoy - Premium Web & Mobile App Development Agency",
+    description: "Premium web & mobile app development agency with design and business consultation services. Custom software solutions for startups and enterprises.",
   },
 };
 
