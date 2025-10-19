@@ -14,7 +14,7 @@ export function CaseStudies() {
       description: "The agency behind millions of views. Our impeccable strategy helps brands go viral, achieving millions of views.",
       image: "/a.png",
       tags: ["Marketing", "Viral Content", "Brand Growth"],
-      timeline: "2 Weeks",
+      timeline: "2 Days",
       results: "500M+ views",
       link: "https://www.adverzeo.online/"
     },
@@ -23,7 +23,7 @@ export function CaseStudies() {
       description: "Seamless global finance with zero hidden fees, instant settlements, and enterprise‑grade security.",
       image: "/p.png",
       tags: ["Fintech", "Payments", "Global"],
-      timeline: "3 Weeks",
+      timeline: "2 Weeks",
       results: "190+ countries",
       link: "https://www.payflow.cash/"
     },
