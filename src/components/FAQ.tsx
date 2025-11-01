@@ -4,8 +4,8 @@ import { AnimatedSection } from "./AnimatedSection";
 export function FAQ() {
   const faqs = [
     {
-      question: "How do you deliver so quickly?",
-      answer: "We have a streamlined process with dedicated teams, pre-built components, and efficient project management. Our experience allows us to avoid common pitfalls and deliver faster without compromising quality."
+      question: "What services does ProductJoy offer?",
+      answer: "We offer three core verticals — Design, Development, and Marketing — that work together to take startups from idea to market."
     },
     {
       question: "What if I need revisions?",

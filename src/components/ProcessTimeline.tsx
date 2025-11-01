@@ -6,20 +6,20 @@ export function ProcessTimeline() {
     {
       icon: <FileText className="h-8 w-8" />,
       title: "Brief",
-      description: "We capture your vision, requirements, and success metrics in a comprehensive brief that guides the entire project.",
-      duration: "Day 1"
+      description: "Align on goals, audience, and brand direction to kickstart your vision.",
+      duration: "1 day"
     },
     {
       icon: <Zap className="h-8 w-8" />,
-      title: "Sprint",
-      description: "Intensive development sprints where we design, build, and iterate rapidly using proven methodologies.",
-      duration: "Days 2-6"
+      title: "Build",
+      description: "Design, develop, and launch your product or campaign with startup speed.",
+      duration: "1–2 weeks"
     },
     {
       icon: <Rocket className="h-8 w-8" />,
-      title: "Ship",
-      description: "Polish, test, and launch your product with performance monitoring and optimization.",
-      duration: "Day 7"
+      title: "Boost",
+      description: "Market, optimize, and scale your impact with data-backed strategies.",
+      duration: "Ongoing"
     }
   ];
 
@@ -28,10 +28,10 @@ export function ProcessTimeline() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
-            Brief → Sprint → Ship
+            How we bring ideas to life
           </h2>
           <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto px-4">
-            Our battle-tested process that turns ideas into shipped products
+            Brief → Build → Boost
           </p>
         </div>
 

@@ -7,47 +7,49 @@ import { AnimatedSection } from "./AnimatedSection";
 export function DeliveryPlans() {
   const plans = [
     {
-      name: "Sprint",
-      duration: "2 Days",
+      name: "Design Sprint",
+      duration: "3 Days",
       icon: <Zap className="h-6 w-6" />,
-      description: "Perfect for quick wins and focused features",
+      description: "Visual identity, landing page, and UI system",
       price: "$3,500",
       features: [
-        "Single feature development",
-        "Bug fixes and improvements", 
-        "Code review and testing",
-        "Same-day communication",
-        "48-hour delivery"
+        "Visual identity",
+        "Landing page",
+        "UI system",
+        "Brand guidelines",
+        "Responsive design"
       ],
       popular: false
     },
     {
-      name: "Launch",
+      name: "Launch Sprint",
       duration: "1 Week", 
       icon: <Clock className="h-6 w-6" />,
-      description: "Ideal for complete features and small products",
+      description: "Full-stack product launch with design + dev + marketing setup",
       price: "$12,500",
       features: [
-        "Full feature development",
-        "UI/UX design included",
-        "API integration",
-        "7-day delivery guarantee",
-        "2 rounds of revisions"
+        "Full-stack product launch",
+        "Design + dev + marketing setup",
+        "UI/UX design",
+        "Backend development",
+        "Marketing strategy",
+        "7-day delivery"
       ],
       popular: true
     },
     {
-      name: "Scale",
+      name: "Scale Sprint",
       duration: "1 Month",
       icon: <Calendar className="h-6 w-6" />,
-      description: "For comprehensive products and solutions", 
+      description: "Advanced features, growth campaigns, and post-launch support", 
       price: "$35,000",
       features: [
-        "Complete product development",
-        "Advanced integrations",
-        "Custom design system",
-        "DevOps and deployment",
-        "Unlimited revisions",
+        "Advanced features",
+        "Growth campaigns",
+        "Post-launch support",
+        "Custom integrations",
+        "Performance optimization",
+        "Ongoing maintenance"
       ],
       popular: false
     }
@@ -58,10 +60,10 @@ export function DeliveryPlans() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
-            Choose your timeline
+            Choose your sprint
           </h2>
           <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto px-4">
-            Premium development at startup speed. Choose your timeline, we&apos;ll deliver excellence.
+            From rapid MVPs to full-scale launches — built for founders at every stage.
           </p>
         </div>
 

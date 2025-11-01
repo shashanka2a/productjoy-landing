@@ -48,25 +48,16 @@ export function Hero() {
       
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold text-white mb-6 sm:mb-8 leading-tight">
-          <TypingText text="Ship real products," speed={80} />
+          <TypingText text="Launch ideas that inspire," speed={80} />
           <br />
           <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-            <TypingText text="insanely fast" speed={80} />
+            <TypingText text="design, and grow." speed={80} />
           </span>
         </h1>
         <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed px-4">
-          Premium web & mobile app development that moves at the speed of your ambition. 
-          From wireframes to launch, we make it happen.
+          ProductJoy is your startup's all-in-one design, development, and marketing partner — crafting brands, building products, and driving growth at startup speed.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
-          <Button 
-            size="lg"
-            className="w-full sm:w-auto bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg group transition-all duration-300 ease-out"
-            onClick={() => window.open('https://pay.productjoy.co', '_blank')}
-          >
-            Start Your Project
-            <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
           <Button 
             size="lg"
             variant="outline"
@@ -77,21 +68,33 @@ export function Hero() {
               else window.location.hash = 'work';
             }}
           >
-            View Our Work
+            Explore Our Work
+          </Button>
+          <Button 
+            size="lg"
+            className="w-full sm:w-auto bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg group transition-all duration-300 ease-out"
+            onClick={() => window.open('https://pay.productjoy.co', '_blank')}
+          >
+            Book a Strategy Call
+            <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>
-        <div className="mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 text-center px-4">
+        <div className="mt-12 sm:mt-16 grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 text-center px-4">
           <div>
-            <div className="text-2xl sm:text-3xl font-bold text-white mb-2">2-30 days</div>
-            <div className="text-sm sm:text-base text-gray-400">Delivery time</div>
+            <div className="text-2xl sm:text-3xl font-bold text-white mb-2">100+</div>
+            <div className="text-sm sm:text-base text-gray-400">Projects Delivered</div>
           </div>
           <div>
-            <div className="text-2xl sm:text-3xl font-bold text-white mb-2">10+</div>
-            <div className="text-sm sm:text-base text-gray-400">Projects shipped</div>
+            <div className="text-2xl sm:text-3xl font-bold text-white mb-2">50+</div>
+            <div className="text-sm sm:text-base text-gray-400">Startup Clients</div>
           </div>
           <div>
-            <div className="text-2xl sm:text-3xl font-bold text-white mb-2">24/7</div>
-            <div className="text-sm sm:text-base text-gray-400">Support</div>
+            <div className="text-2xl sm:text-3xl font-bold text-white mb-2">99%</div>
+            <div className="text-sm sm:text-base text-gray-400">Satisfaction</div>
+          </div>
+          <div>
+            <div className="text-2xl sm:text-3xl font-bold text-white mb-2">48h</div>
+            <div className="text-sm sm:text-base text-gray-400">Turnaround</div>
           </div>
         </div>
       </div>

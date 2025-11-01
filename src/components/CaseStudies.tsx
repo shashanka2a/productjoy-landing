@@ -10,31 +10,31 @@ import { AnimatedSection } from "./AnimatedSection";
 export function CaseStudies() {
   const cases = [
     {
-      title: "Adverzeo",
-      description: "The agency behind millions of views. Our impeccable strategy helps brands go viral, achieving millions of views.",
+      title: "Bloomora.design",
+      description: "Design system + website revamp for a creative agency.",
       image: "/a.png",
-      tags: ["Marketing", "Viral Content", "Brand Growth"],
-      timeline: "2 Days",
-      results: "500M+ views",
-      link: "https://www.adverzeo.online/"
-    },
-    {
-      title: "PayFlow",
-      description: "Seamless global finance with zero hidden fees, instant settlements, and enterprise‑grade security.",
-      image: "/p.png",
-      tags: ["Fintech", "Payments", "Global"],
+      tags: ["Design", "Brand Identity", "Website"],
       timeline: "2 Weeks",
-      results: "190+ countries",
-      link: "https://www.payflow.cash/"
+      results: "Live site",
+      link: "#"
     },
     {
-      title: "InOrbyt",
-      description: "Launch your own creator token and grow with your community. Every creator and fan gets a built-in wallet — no crypto setup needed.",
-      image: "/p2.png",
-      tags: ["Web3", "Creator Economy", "Tokens"],
+      title: "Tribzy.com",
+      description: "Brand identity + mobile app for college communities.",
+      image: "/p.png",
+      tags: ["Brand", "Mobile App", "Community"],
       timeline: "1 Month",
-      results: "$50M+ volume traded",
-      link: "https://www.inorbyt.club/"
+      results: "Live app",
+      link: "#"
+    },
+    {
+      title: "Rydify.co",
+      description: "Web & mobile experience for U.S. ride-sharing startup.",
+      image: "/p2.png",
+      tags: ["Web App", "Mobile", "Startup"],
+      timeline: "3 Weeks",
+      results: "Live platform",
+      link: "#"
     }
   ];
 
@@ -43,11 +43,8 @@ export function CaseStudies() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
-            Recent work
+            From concept to launch — see our impact
           </h2>
-          <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto px-4">
-            Real projects, real results. See how we&apos;ve helped businesses transform their ideas into successful products.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">

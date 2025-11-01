@@ -8,7 +8,7 @@ export function FinalCTA() {
       <AnimatedSection direction="fade" delay={100}>
         <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 sm:mb-6">
-          Ready to ship your 
+          Ready to launch your 
           <br />
           <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             next big idea?
@@ -16,8 +16,7 @@ export function FinalCTA() {
         </h2>
         
         <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed px-4">
-          Join 100+ successful companies who chose ProductJoy to ship their products. 
-          Book a call and let&apos;s make it happen.
+          Join 100+ startups that built their brands, products, and audiences with ProductJoy. Let&apos;s make your vision real.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-12 px-4">
@@ -27,7 +26,7 @@ export function FinalCTA() {
             rel="noopener noreferrer"
             className="w-full sm:w-auto bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg group transition-all duration-300 ease-out rounded-md inline-flex items-center justify-center"
           >
-            Start Your Project Today
+            Start Your Project
             <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
           </a>
           <a
