@@ -51,7 +51,7 @@ export function Hero() {
           <TypingText text="Launch ideas that inspire," speed={80} />
           <br />
           <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-            <TypingText text="design, and grow." speed={80} />
+            <TypingText text="design & grow." speed={80} />
           </span>
         </h1>
         <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed px-4">
