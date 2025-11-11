@@ -10,28 +10,28 @@ import { AnimatedSection } from "./AnimatedSection";
 export function CaseStudies() {
   const cases = [
     {
-      title: "Bloomora.design",
-      description: "Design system + website revamp for a creative agency.",
+      title: "Adverzeo",
+      description: "The Art Of Loading Excellence • premium marketing platform design.",
       image: "/a.png",
-      tags: ["Design", "Brand Identity", "Website"],
+      tags: ["Brand Identity", "Web Design", "UI/UX"],
       timeline: "2 Weeks",
       results: "Live site",
       link: "#"
     },
     {
-      title: "Tribzy.com",
-      description: "Brand identity + mobile app for college communities.",
+      title: "Payflow",
+      description: "Seamless global finance with zero hidden fees and instant settlements.",
       image: "/p.png",
-      tags: ["Brand", "Mobile App", "Community"],
+      tags: ["Fintech", "Web App", "Design System"],
       timeline: "1 Month",
       results: "Live app",
       link: "#"
     },
     {
-      title: "Rydify.co",
-      description: "Web & mobile experience for U.S. ride-sharing startup.",
+      title: "InOrbyt",
+      description: "Reward your community. No crypto. No complexity. Just connection.",
       image: "/p2.png",
-      tags: ["Web App", "Mobile", "Startup"],
+      tags: ["Web3", "Platform Design", "Brand Identity"],
       timeline: "3 Weeks",
       results: "Live platform",
       link: "#"

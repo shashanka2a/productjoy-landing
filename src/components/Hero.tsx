@@ -79,22 +79,14 @@ export function Hero() {
             <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>
-        <div className="mt-12 sm:mt-16 grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 text-center px-4">
+        <div className="mt-12 sm:mt-16 grid grid-cols-2 gap-6 sm:gap-8 text-center px-4 max-w-md mx-auto">
           <div>
-            <div className="text-2xl sm:text-3xl font-bold text-white mb-2">100+</div>
-            <div className="text-sm sm:text-base text-gray-400">Projects Delivered</div>
+            <div className="text-2xl sm:text-3xl font-bold text-white mb-2">10+</div>
+            <div className="text-sm sm:text-base text-gray-400">projects</div>
           </div>
           <div>
-            <div className="text-2xl sm:text-3xl font-bold text-white mb-2">50+</div>
-            <div className="text-sm sm:text-base text-gray-400">Startup Clients</div>
-          </div>
-          <div>
-            <div className="text-2xl sm:text-3xl font-bold text-white mb-2">99%</div>
-            <div className="text-sm sm:text-base text-gray-400">Satisfaction</div>
-          </div>
-          <div>
-            <div className="text-2xl sm:text-3xl font-bold text-white mb-2">48h</div>
-            <div className="text-sm sm:text-base text-gray-400">Turnaround</div>
+            <div className="text-2xl sm:text-3xl font-bold text-white mb-2">5+</div>
+            <div className="text-sm sm:text-base text-gray-400">happy clients</div>
           </div>
         </div>
       </div>
