@@ -16,7 +16,7 @@ export function CaseStudies() {
       tags: ["Brand Identity", "Web Design", "UI/UX"],
       timeline: "2 Weeks",
       results: "Live site",
-      link: "#"
+      link: "https://www.adverzeo.online/"
     },
     {
       title: "Payflow",
@@ -25,7 +25,7 @@ export function CaseStudies() {
       tags: ["Fintech", "Web App", "Design System"],
       timeline: "1 Month",
       results: "Live app",
-      link: "#"
+      link: "https://www.payflow.cash/"
     },
     {
       title: "InOrbyt",
@@ -34,7 +34,7 @@ export function CaseStudies() {
       tags: ["Web3", "Platform Design", "Brand Identity"],
       timeline: "3 Weeks",
       results: "Live platform",
-      link: "#"
+      link: "https://inorbyt.club/"
     }
   ];
 
