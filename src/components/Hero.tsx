@@ -55,7 +55,7 @@ export function Hero() {
           </span>
         </h1>
         <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed px-4">
-          ProductJoy is your startup&apos;s all-in-one design, development, and marketing partner — crafting brands and driving growth at startup speed.
+          ProductJoy is your startup&apos;s all-in-one design, development, and marketing partner - crafting brands and driving growth at startup speed.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
           <Button 
