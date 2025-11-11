@@ -48,10 +48,10 @@ export function Hero() {
       
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold text-white mb-6 sm:mb-8 leading-tight">
-          <TypingText text="Launch ideas that inspire," speed={80} />
+          <TypingText text="Ship real products," speed={80} />
           <br />
           <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-            <TypingText text="design & grow." speed={80} />
+            <TypingText text="insanely fast" speed={80} />
           </span>
         </h1>
         <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed px-4">
